@@ -1,0 +1,50 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}Home - Modern Website{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to ModernSite</h1>
+            <p class="hero-subtitle">Experience the future of web design with our clean, smooth, and responsive interface</p>
+            <div class="hero-buttons">
+                <a href="{% url 'about' %}" class="btn btn-primary">Learn More</a>
+                <a href="{% url 'contact' %}" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <div class="card-content">
+                    <div class="card-icon">🚀</div>
+                    <h3>Modern Design</h3>
+                    <p>Clean and contemporary aesthetics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Performance</h3>
+                <p>Lightning-fast loading speeds and smooth animations</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Perfect experience across all devices and screen sizes</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful UI</h3>
+                <p>Modern, clean design that users love</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
